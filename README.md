@@ -1,6 +1,23 @@
 # doraemon-desktop-pet Doraemon 机器猫桌面电子宠物
 这是一款Doraemon机器猫主题桌面电子宠物，基于前端electron框架实现快速搭建。
 
+# 依赖说明
+
+```
+electron：v27.0.4
+npm：v10.1.0
+node：v20.9.0
+```
+
+# 运行说明
+```
+npm run start
+```
+
+# 打包说明
+```
+npm run pack
+```
 
 # 2025.01.05 说明
 
