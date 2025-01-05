@@ -9,7 +9,7 @@
   },
   "build": {
     "win": {
-      "icon": "../assets/favicon.ico"
+      "icon": "./assets/favicon.ico"
     }
   },
   "nsis": {
