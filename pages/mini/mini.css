@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "alibaba";
+    src: url("alibaba.ttf") format("woff"),
+        url("alibaba.ttf") format("truetype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    flex-shrink: 0;
+    font-family: "alibaba";
+    font-size: 13px;
+}
+
+.bot-box-logo {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.bot-box-logo-img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    background-image: url(../../assets/doraemon.png);
+    -webkit-app-region: no-drag;
+    background-size: cover;
+    user-select: none;
+}
+
+.bot-box-btn {
+    height: 35px;
+    background-color: #444857ba;
+    width: 50px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bac7ce;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -35px;
+}
+
+.bot-box-drag {
+    height: 35px;
+    background-color: #444857ba;
+    width: 55px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bac7ce;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -35px;
+    left: 65px;
+    -webkit-app-region: drag;
+}
+
+.bot-box {
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.message-content {
+    background-color: #F3F6FD;
+    max-width: 200px;
+    margin-left: 20px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    line-height: 20px;
+}
+
+.triangle {
+    position: absolute;
+    left: -10px;
+    top: 25px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 10px solid #F3F6FD;
+}
+

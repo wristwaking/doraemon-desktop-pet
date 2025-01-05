@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="mini.css">
+</head>
+
+<body>
+    <div class="contain" id="app">
+        <audio id="audio" :src="mp3"></audio>
+        <div class="bot-box">
+            <div class="bot-box-logo">
+                <div class="bot-box-logo-img" @dblclick="OpenMenu"></div>
+                <div class="bot-box-btn"  v-if="menustate" @click="EnterMain">管理端</div>
+                <div class="bot-box-drag" v-if="menustate">拖置吧</div>
+            </div>
+            <div class="message-content" v-if="state" @click="CloseContent">
+                <span class="triangle"></span>
+                <div>
+                    <p>{{time}}</p>
+                    <p>温馨提醒：{{content}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="mini.css">
+    <script src="vue.min.js"></script>
+    <script src="render.js"></script>
+</body>

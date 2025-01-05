@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "description": "机器猫主题桌面宠物",
+  "author": "上海预醒网络科技有限公司",
+   "name": "EdgeHakerMini",
+  "scripts": {
+    "start": "chcp 65001 && electron .",
+    "pack": "electron-builder --dir"
+  },
+  "build": {
+    "win": {
+      "icon": "../assets/favicon.ico"
+    }
+  },
+  "nsis": {
+    "oneClick": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "moment": "^2.29.4",
+    "node-notifier": "^10.0.1",
+    "node-schedule": "^2.1.1",
+    "uuid": "^9.0.1",
+    "validator": "^13.11.0"
+  }
+}

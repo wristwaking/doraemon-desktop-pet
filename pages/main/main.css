@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    flex-shrink: 0;
+    font-family: "alibaba";
+    font-size: 13px;
+}
+
+@font-face {
+    font-family: "alibaba";
+    src: url("alibaba.ttf") format("woff"),
+        url("alibaba.ttf") format("truetype");
+}
+
+.contain {
+    padding: 20px;
+    width: 880px;
+    --main-height: 425px;
+    border-radius: 20px;
+    overflow: hidden;
+    outline: none;
+    display: flex;
+    background-color: #F3F6FD;
+    -webkit-app-region: drag;
+}
+
+
+.left-menu {
+    height: var(--main-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.left-menu-logo {
+    background-color: white;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .1);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    -webkit-app-region: no-drag;
+}
+
+.left-menu-btn {
+    background-color: white;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #757c8e;
+    -webkit-app-region: no-drag;
+}
+
+
+.schedule {
+    width: 450px;
+    border-radius: 10px;
+    height: var(--main-height);
+    background-color: white;
+    overflow-y: scroll;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .1);
+    -webkit-app-region: no-drag;
+    margin-right: 20px;
+}
+
+.schedule::-webkit-scrollbar {
+    display: none;
+}
+
+.schedule-item {
+    width: 370px;
+    margin: 20px;
+    background-color: #ECEFF7;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.schedule-item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+}
+
+.schedule-item-top-time {
+    border: 2px solid #c1c7d7;
+    padding: 0 15px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: #6c7284;
+    border-radius: 5px;
+    background-color: #cacfdc;
+}
+
+.schedule-item-top-del {
+    background-color: #CF0004;
+    padding: 0 15px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.schedule-item-content {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.right {
+    height: var(--main-height);
+    flex: 1;
+    min-width: 340px;
+}
+
+.right-menu {
+    width: 340px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+.right-menu-time {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .1);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #1296DB;
+    -webkit-app-region: no-drag;
+}
+
+.right-menu-mini {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.right-menu-delete {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.chat-box {
+    width: 100%;
+    border-radius: 10px;
+    height: 335px;
+    background-color: white;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .1);
+    padding-top: 20px;
+    -webkit-app-region: no-drag;
+}
+
+
+
+.chat-box-main {
+    width: calc(100% - 40px);
+    height: 245px;
+    margin: 20px;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+.chat-box-main-top {
+    display: flex;
+    align-items: center;
+    color: #8d94a7;
+    justify-content: space-between;
+}
+
+.chat-box-main-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: block;
+}
+
+.chat-box-main-top span {
+    padding: 0 15px;
+    background-color: #F3F6FD;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.chat-box-main-content {
+    width: calc(100%);
+    height: 245px;
+    background-color: #F3F6FD;
+    border-radius: 5px;
+    color: #5a5b77;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    line-height: 25px;
+    text-align: justify;
+    overflow-y: scroll;
+}
+
+.chat-box-main-content::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-box input {
+    border: none;
+    background-color: #F0F1F6;
+    width: calc(100% - 40px);
+    margin: 20px;
+    margin-top: 0;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border: 2px solid #e0e2e8;
+    outline: none;
+}
+
+.chat-box input::placeholder {
+    color: #BFC8E0;
+}
+
+
+.schedule-add-box {
+    width: 340px;
+    border-radius: 10px;
+    height: 335px;
+    background-color: white;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .1);
+    padding-top: 20px;
+    -webkit-app-region: no-drag;
+}
+
+.schedule-add-box input {
+    height: 45px;
+    width: 300px;
+    outline: none;
+    border: none;
+    background-color: #ECEFF7;
+    margin: 20px;
+    margin-top: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.schedule-add-menu {
+    padding: 0 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.schedule-add-menu div {
+    width: calc(50% - 10px);
+    height: 30px;
+    background-color: #ECEFF7;
+    padding: 0 15px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    color: #979EAD;
+    border: 2px solid #dce1ed;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.schedule-add-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.schedule-add-bottom div {
+    height: 35px;
+    background-color: #444857;
+    padding: 0 15px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.schedule-add-bottom-submit {
+    flex: 1;
+    margin-left: 25px;
+    justify-content: center;
+}
